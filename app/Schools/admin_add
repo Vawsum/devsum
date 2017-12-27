@@ -1,0 +1,13 @@
+admin_add()
+-----------
+1. Check if user_name exists
+2. Check if profile_name is taken.
+3. Create secret key for user_types
+4. Create entries for push_notifications table
+5. Create entries for notification_types table.
+6. Create entry for sms_limits table.
+7. All the contents for that school is deleted from admin_access_modules
+8. The access_modules are iterated and checked for advancedAttendance, busTracking, fees and marks
+9. Then entry is made into admin_access_modules
+10. Then roles are set.Only if the id is null which means its during school creation
+11. The roles table takes care of user_types from 4 to 7 which means admin has all the privileges
